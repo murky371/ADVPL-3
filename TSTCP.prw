@@ -7,7 +7,7 @@
 Função para criar o programa de Pedidos acessando as tabelas SZ5 e SZ6
 @type function
 @version  
-@author Placido
+@author Joao Goncalves
 @since 29/06/2021
 @return variant, return_description
 /*/
@@ -33,7 +33,7 @@ return
 Static Function responsável pela Criação
 @type function
 @version  
-@author Placido
+@author Joao Goncalves
 @since 29/06/2021
 @return variant, return_description
 /*/
@@ -77,7 +77,7 @@ return aRotina
 Funcao Modelo do MVC - Esta funcao responsavel pela montagem da estrutura dos dados
 @type function
 @version  
-@author Placido
+@author Joao Goncalves
 @since 29/06/2021
 @return variant, return_description
 /*/
@@ -122,7 +122,7 @@ Return oModel
 Função Responsável pela parte visual do Programa
 @type function
 @version  
-@author Placido
+@author Joao Goncalves
 @since 29/06/2021
 @return variant, return_description
 /*/
@@ -181,56 +181,4 @@ oView:EnableTitleView("VIEWZB3","Manutencao de Comissao")
 
 return oView
 
-
-/*/{Protheus.doc} User Function SZ5LEG
-    (long_description)
-    @type  Function
-    @author user
-    @since 29/06/2021
-    @version version
-    @param param_name, param_type, param_descr
-    @return aLegenda, return_type, return_description
-    @example
-    (examples)
-    @see (links_or_references)
-    /*/
-/*
-User Function SZ5LEGENDA()
-Local aLegenda  := {}
-
-aAdd(aLegenda,{"BR_VERDE",      "Pedido Aberto"})
-aAdd(aLegenda,{"BR_AMARELO" , 	"Pedido em Andamento"})
-aAdd(aLegenda,{"BR_VERMELHO", 	"Pedido Finalizado"})
-
-BrwLegenda("Status dos Pedidos",,aLegenda)
-
-Return aLegenda
-*/
-
-
-/*/{Protheus.doc} User Function SZ5SOBRE
-Exibe uma tela com uma mensagem sobre o Programa construído
-    @type  Function
-    @author user
-    @since 29/06/2021
-    @version version
-    @param , param_type, param_descr
-    @return return_type, return_description
-    @example
-    (examples)
-    @see (links_or_references)
-    /*/
-/*
-User Function SZ5SOBRE()
-Local cSobre
-
-cSobre := "-<b>Minha tela de testes em MVC Modelo 3<br>"+;
-"Este Sistema de Pedidos foi desenvolvido na Semana do Desenvolvedor Protheus 2.0"
-
-MsgInfo(cSobre,"Sobre o Programador...")    
-
-
-Return 
-
-*/
 
