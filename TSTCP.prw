@@ -9,7 +9,7 @@ Função para criar o programa de Pedidos acessando as tabelas SZ5 e SZ6
 @version  
 @author Joao Goncalves
 @since 29/06/2021
-@return variant, return_description
+@return Sem retorno
 /*/
 User Function TSTCP()
 Local oBrowse    //Digo o fonte que eu estou buscando o BrowseDef
@@ -35,7 +35,7 @@ Static Function responsável pela Criação
 @version  
 @author Joao Goncalves
 @since 29/06/2021
-@return variant, return_description
+@return oBrowse
 /*/
 /*
 Static Function BrowseDef()
