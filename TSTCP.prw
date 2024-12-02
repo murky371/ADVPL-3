@@ -3,7 +3,7 @@
 #INCLUDE 'FwEditPanel.ch
 #INCLUDE "TopConn.ch"
 
-/*/{Protheus.doc} MVCZ5Z6
+/*/{Protheus.doc} TSTCP
 Função para criar o programa de Pedidos acessando as tabelas SZ5 e SZ6
 @type function
 @version  
